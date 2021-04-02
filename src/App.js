@@ -1,23 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import { useContext } from 'react';
+import { ColorContext } from './context/ColorContext';
 
 function App() {
+  const { color, changeColor } = useContext(ColorContext);
+  const font = color ? 'red' : 'green';
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div
+      className='container'
+      style={{ height: '60vh', backgroundColor: font }}
+    >
+      <h3 onClick={() => changeColor(color)} style={{ color: '#fff' }}>
+        {font}
+      </h3>
     </div>
   );
 }
