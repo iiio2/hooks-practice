@@ -16,6 +16,8 @@ export const addReducer = (state, action) => {
           id: Math.random() * 100,
         },
       ];
+    case 'REMOVE_POST':
+      return state.filter((post) => post.id !== action.id);
     default:
       return state;
   }

@@ -15,6 +15,10 @@ function App() {
     setInput('');
   };
 
+  const handleDelete = (id) => {
+    dispatch({ type: 'REMOVE_POST', id });
+  };
+
   return (
     <div
       className='container'
@@ -26,7 +30,15 @@ function App() {
       <hr />
       <ul>
         {posts.map((post) => (
-          <li key={post.id}>{post.title}</li>
+          <li key={post.id}>
+            {post.title} |{' '}
+            <button
+              onClick={() => handleDelete(post.id)}
+              className='btn btn-sm btn-danger'
+            >
+              X
+            </button>{' '}
+          </li>
         ))}
       </ul>
       <hr />
