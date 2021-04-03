@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/hooks-practice/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/hooks-practice/static/js/main.f1bb0e1a.chunk.js",
+    "main.js.map": "/hooks-practice/static/js/main.f1bb0e1a.chunk.js.map",
+    "runtime-main.js": "/hooks-practice/static/js/runtime-main.93e74ed1.js",
+    "runtime-main.js.map": "/hooks-practice/static/js/runtime-main.93e74ed1.js.map",
+    "static/css/2.ef9168ec.chunk.css": "/hooks-practice/static/css/2.ef9168ec.chunk.css",
+    "static/js/2.af08fb8c.chunk.js": "/hooks-practice/static/js/2.af08fb8c.chunk.js",
+    "static/js/2.af08fb8c.chunk.js.map": "/hooks-practice/static/js/2.af08fb8c.chunk.js.map",
+    "static/js/3.bc3213ae.chunk.js": "/hooks-practice/static/js/3.bc3213ae.chunk.js",
+    "static/js/3.bc3213ae.chunk.js.map": "/hooks-practice/static/js/3.bc3213ae.chunk.js.map",
+    "index.html": "/hooks-practice/index.html",
+    "static/css/2.ef9168ec.chunk.css.map": "/hooks-practice/static/css/2.ef9168ec.chunk.css.map",
+    "static/css/main.6dea0f05.chunk.css.map": "/hooks-practice/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.af08fb8c.chunk.js.LICENSE.txt": "/hooks-practice/static/js/2.af08fb8c.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.93e74ed1.js",
+    "static/css/2.ef9168ec.chunk.css",
+    "static/js/2.af08fb8c.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.f1bb0e1a.chunk.js"
+  ]
+}
