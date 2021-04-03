@@ -1,28 +1,16 @@
-import { useState, createContext } from 'react';
+import { useReducer, createContext } from 'react';
+import * as postReducer from '../reducers/PostReducer';
 
 export const PostContext = createContext();
 
 const PostContextProvider = ({ children }) => {
-  const [posts, setPosts] = useState([
-    { id: 1, title: 'Adam Smith' },
-    { id: 2, title: 'Dan Robert' },
-    { id: 3, title: 'Geroge Alderson' },
-  ]);
-
-  const add = (post) => {
-    const id = Math.random() * 100;
-    const newPost = {};
-    newPost.id = id;
-    newPost.title = post;
-
-    const allPosts = [...posts, newPost];
-    setPosts(allPosts);
-
-    console.log(post);
-  };
+  const [posts, dispatch] = useReducer(
+    postReducer.addReducer,
+    postReducer.initialState.posts
+  );
 
   return (
-    <PostContext.Provider value={{ posts, add }}>
+    <PostContext.Provider value={{ posts, dispatch }}>
       {children}
     </PostContext.Provider>
   );

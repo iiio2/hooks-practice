@@ -6,12 +6,12 @@ function App() {
   const [input, setInput] = useState('');
 
   const { color, changeColor } = useContext(ColorContext);
-  const { posts, add } = useContext(PostContext);
+  const { posts, dispatch } = useContext(PostContext);
   const font = color ? 'red' : 'green';
 
   const handleAdd = (e) => {
     e.preventDefault();
-    add(input);
+    dispatch({ type: 'ADD_POST', input });
     setInput('');
   };
 
