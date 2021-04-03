@@ -4,13 +4,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import ColorContextProvider from './context/ColorContext';
+import PostContextProvider from './context/PostContext';
 
 import 'bootstrap/dist/css/bootstrap.css';
 
 ReactDOM.render(
   <React.StrictMode>
     <ColorContextProvider>
-      <App />
+      <PostContextProvider>
+        <App />
+      </PostContextProvider>
     </ColorContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
